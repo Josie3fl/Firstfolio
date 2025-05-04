@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioCard from "./PortfolioCard"; // Import PortfolioCard component
+import PortfolioCard from "./PortfolioCards"; // Import PortfolioCard component
 import "./FlipCard.css"; // Import CSS for flip card styling
 
 const Portfolio: React.FC = () => {
@@ -21,7 +21,11 @@ const Portfolio: React.FC = () => {
         {/* Example of a Portfolio Card */}
         <PortfolioCard
           screenshot="path-to-your-screenshot.jpg"
-          githubLink="https://github.com/your-username/your-repository"
+          githubLink="https://github.com/Josie3fl/little-book-keeper-JB"
+        />
+        <PortfolioCard
+          screenshot="path-to-your-screenshot.jpg"
+          githubLink="https://github.com/Josie3fl/EMP-Racetrack"
         />
         {/* Add more PortfolioCards as needed */}
       </section>
