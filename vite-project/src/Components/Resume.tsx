@@ -2,9 +2,9 @@ import React from 'react';
 
 const Resume: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#1b355b] text-white font-sans">
+    <div id="resume" className="min-h-screen bg-[#1b355b] text-white font-sans">
       <header className="bg-cover bg-center h-24 flex items-center justify-around text-white font-bold text-xl tracking-wide" style={{ backgroundImage: "url('/path/to/your/diagonal-bg.png')" }}>
-        <div className="text-3xl font-serif">Resume Section</div>
+        <div className="text-3xl font-serif"></div>
         <nav className="space-x-6">
           <a href="#about" className="hover:underline"></a>
           <a href="#portfolio" className="hover:underline"></a>
