@@ -3,16 +3,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     /* Diagonal striped background using a repeating linear gradient */
     background: repeating-linear-gradient(
       45deg,
-      #606dbc,        /* stripe color 1 */
+      #1a88e2,        /* stripe color 1 */
       #606dbc 10px,
       #465298 10px,   /* stripe color 2 */
       #465298 20px
     );
-    color: white;
+    color: rgba(233, 233, 233, 0.904);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
   
   .navbar-brand {
     font-family: Georgia, serif;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
     color: white;
   }
@@ -41,7 +41,8 @@
   .navbar-menu a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 950;
+    font-size: 1.2rem;
   }
   
   .navbar-menu a:hover {

@@ -7,12 +7,12 @@ const Portfolio: React.FC = () => {
     <div className="min-h-screen bg-[#1f2e4a] text-white font-sans">
       {/* Header */}
       <header className="bg-[url('/header-bg.jpg')] bg-cover py-6 px-4 flex justify-between items-center text-white">
-        <h1 className="text-3xl font-bold">Lernantino</h1>
+        <h1 className="text-3xl font-bold">Portfolio</h1>
         <nav className="space-x-6 text-lg">
-          <a href="#about" className="hover:underline">About me</a>
-          <a href="#portfolio" className="hover:underline">Portfolio</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-          <a href="#resume" className="hover:underline text-red-400">Resume</a>
+          <a href="#about" className="hover:underline"></a>
+          <a href="#portfolio" className="hover:underline"></a>
+          <a href="#contact" className="hover:underline"></a>
+          <a href="#resume" className="hover:underline text-red-400"></a>
         </nav>
       </header>
 
@@ -20,11 +20,11 @@ const Portfolio: React.FC = () => {
       <section id="portfolio" className="px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Example of a Portfolio Card */}
         <PortfolioCard
-          screenshot="path-to-your-screenshot.jpg"
+          screenshot="src/assests/littlebookkeeper.png"
           githubLink="https://github.com/Josie3fl/little-book-keeper-JB"
         />
         <PortfolioCard
-          screenshot="path-to-your-screenshot.jpg"
+          screenshot="src/assests/emp-screenshot.png"
           githubLink="https://github.com/Josie3fl/EMP-Racetrack"
         />
         {/* Add more PortfolioCards as needed */}
