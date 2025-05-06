@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  background: linear-gradient(to bottom, #792566, #aa0303);
+  color: white;
+  font-size: 22px;
+  padding-bottom: 60px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b355b; /* Match your theme */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  }

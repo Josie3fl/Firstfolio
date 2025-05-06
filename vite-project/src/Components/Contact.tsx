@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
         <form className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-lg font-medium">Name:</label>
-            <input type="text" id="name" name="name" className="w-full p-2 rounded text-black" defaultValue="Lernan" />
+            <input type="text" id="name" name="name" className="w-full p-2 rounded text-black" defaultValue="Your Name" />
           </div>
 
           <div>

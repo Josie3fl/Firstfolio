@@ -19,7 +19,7 @@ const Resume: React.FC = () => {
         <section className="mb-10">
           <h3 className="text-xl font-medium mb-2">Download</h3>
           <a
-            href="/path/to/resume.pdf"
+            href="firstfolio-resume.pdf"
             download
             className="inline-block bg-gray-300 text-black px-4 py-2 rounded hover:bg-gray-400"
           >

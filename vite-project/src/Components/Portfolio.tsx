@@ -20,17 +20,17 @@ const Portfolio: React.FC = () => {
       <section id="portfolio" className="px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Example of a Portfolio Card */}
         <PortfolioCard
-          screenshot="src/assests/littlebookkeeper.png"
+          screenshot="src/assets/little-book-keeper.png"
           githubLink="https://github.com/Josie3fl/little-book-keeper-JB"
         />
         <PortfolioCard
-          screenshot="src/assests/emp-screenshot.png"
+          screenshot="src/assets/emp-screenshot.png"
           githubLink="https://github.com/Josie3fl/EMP-Racetrack"
         />
         {/* Add more PortfolioCards as needed */}
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section
       <section id="contact" className="px-8 py-12">
         <h2 className="text-2xl font-semibold mb-6">Contact</h2>
         <form className="space-y-4 max-w-md">
@@ -38,7 +38,7 @@ const Portfolio: React.FC = () => {
             <label className="block mb-1 font-bold">Name:</label>
             <input
               type="text"
-              placeholder="Lernantino"
+              placeholder="Your Name"
               className="w-full px-3 py-2 text-black rounded-md"
             />
           </div>
@@ -46,7 +46,7 @@ const Portfolio: React.FC = () => {
             <label className="block mb-1 font-bold">Email address:</label>
             <input
               type="email"
-              placeholder="lernantino@gmail.com"
+              placeholder="example@gmail.com"
               className="w-full px-3 py-2 text-black rounded-md"
             />
           </div>
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
             Submit
           </button>
         </form>
-      </section>
+      </section> */}
     </div>
   );
 };

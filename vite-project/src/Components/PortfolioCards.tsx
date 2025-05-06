@@ -13,7 +13,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ screenshot, githubLink })
           <img
             src={screenshot}
             alt="Project Screenshot"
-            className="w-full h-full object-cover"
+            className="w-72 h-48 object-cover rounded-lg"
+            style={{ width: "600px", height: "225px" }} // Adjusted size for the image
           />
         </div>
         <div className="flip-card-back flex justify-center items-center bg-[#1f2e4a]">
