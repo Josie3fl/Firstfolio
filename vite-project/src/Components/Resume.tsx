@@ -50,7 +50,6 @@ const Resume: React.FC = () => {
               <li>SQL</li>
               <li>RESTful APIs</li>
               <li>GraphQL</li>
-              <li>Docker</li>
             </ul>
           </div>
         </section>

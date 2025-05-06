@@ -1,0 +1,49 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Diagonal striped background using a repeating linear gradient */
+    background: repeating-linear-gradient(
+      45deg,
+      #606dbc,        /* stripe color 1 */
+      #606dbc 10px,
+      #465298 10px,   /* stripe color 2 */
+      #465298 20px
+    );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li + li {
+    margin-left: 15px;  /* space between menu items */
+  }
+  
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navbar-menu a:hover {
+    color: #ddd;
+  }
