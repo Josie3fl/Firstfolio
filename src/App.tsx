@@ -1,9 +1,9 @@
-import { useState } from 'react';
+
 import './App.css';
 import Navbar from './Components/Navbar'; // Import the Navbar component
 import Aboutme from './Components/Aboutme';
 import Portfolio from './Components/Portfolio';
-import PortfolioCard from './Components/PortfolioCards';
+// import PortfolioCard from './Components/PortfolioCards';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 import Footer from './Components/Footer';

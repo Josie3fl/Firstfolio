@@ -1,5 +1,5 @@
-import React from 'react';
-import './FlipCard.css';
+
+// import './FlipCard.css';
 
 // const FlipCard: React.FC = () => {
 //   return (
