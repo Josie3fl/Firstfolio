@@ -1,60 +1,54 @@
-# Firstfolio
-First attempt to making a personal portfolio showcasing some of my best work so far learning how to code
+# React + TypeScript + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-import React from "react";
-import { Card } from "@/components/ui/card";
+Currently, two official plugins are available:
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-[#1f2e4a] text-white font-sans">
-      {/* Header */}
-      <header className="bg-[url('/header-bg.jpg')] bg-cover py-6 px-4 flex justify-between items-center text-white">
-        <h1 className="text-3xl font-bold">Lernantino</h1>
-        <nav className="space-x-6 text-lg">
-          <a href="#about" className="hover:underline">About me</a>
-          <a href="#portfolio" className="hover:underline">Portfolio</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-          <a href="#resume" className="hover:underline text-red-400">Resume</a>
-        </nav>
-      </header>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-      {/* Contact Section */}
-      <section id="contact" className="px-8 py-12">
-        <h2 className="text-2xl font-semibold mb-6">Contact</h2>
-        <form className="space-y-4 max-w-md">
-          <div>
-            <label className="block mb-1 font-bold">Name:</label>
-            <input
-              type="text"
-              placeholder="Lernantino"
-              className="w-full px-3 py-2 text-black rounded-md"
-            />
-          </div>
-          <div>
-            <label className="block mb-1 font-bold">Email address:</label>
-            <input
-              type="email"
-              placeholder="lernantino@gmail.com"
-              className="w-full px-3 py-2 text-black rounded-md"
-            />
-          </div>
-          <div>
-            <label className="block mb-1 font-bold">Message:</label>
-            <textarea
-              rows={5}
-              placeholder="Hi, I am interested in having a website built"
-              className="w-full px-3 py-2 text-black rounded-md"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md"
-          >
-            Submit
-          </button>
-        </form>
-      </section>
-    </div>
-  );
-}
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
