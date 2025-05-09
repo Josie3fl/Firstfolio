@@ -1,12 +1,11 @@
-
-
+import aboutme from '../assets/tokyotower.jpg';
 
 const Aboutme = () => {
   return (
     <div>
       <section id="about" className="px-8 py-12 bg-[#2b3a5a]">
       <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-      <img src="src/assets/tokyotower.jpg" alt="Tokyo Tower" style={{ width: '300px', height: '375px' }} className="object-cover mb-4 rounded-lg" />
+      <img src={aboutme} alt="Tokyo Tower" style={{ width: '300px', height: '375px' }} className="object-cover mb-4 rounded-lg" />
 
       <p className="text-lg leading-relaxed mb-4">
         I’m someone who finds joy in both the serenity of nature and the comfort of indoor life. Whether it’s exploring the mountains, relaxing by the sea, or enjoying a cozy movie night and diving into video games, I embrace it all with equal passion.
