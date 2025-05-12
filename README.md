@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+# <Firstfolio>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Firstfolio a mini collection  of the a few of the first projects I created while learning about code. My motivation was to make a porfolio that shows what I can do all in one page and not too busy that will be distracting from the main goal, for the people looking into the page to see my real work. While building this I found a few issues when trying to set the flip cards, and had to comment out some code since it was no longer working. Another issue I ran was a way to make the images show in the browser once I had it running; it seems that importing its still faster than other methods. Netlify is much fatser to launch than render, although it took some adjustment and settings to modify it was very fun to use. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Installment of this app is very simple:
+You can simply click on this link: https://cozy-puffpuff-d66027.netlify.app/ to get to the live browser or you can get to my repo by clicking this link: https://github.com/Josie3fl/Firstfolio 
+Then after cloning the repo you would run:
+npm i (for install purposes)
+Then we would run:
+npm run dev
+That should load the brower at least locally
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Usage
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Once in the live website you will be able to navigate through it easily. It was designed so that you can scroll down and up as needed and it the nav bar was made to make it easier to get to the place that interest you the most.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Credits
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Thanks to TA's Alex and Rene without both this link would've never been deployed nor the images load correctly.
