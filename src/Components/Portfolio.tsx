@@ -1,6 +1,8 @@
 import React from "react";
 import PortfolioCard from "./PortfolioCards"; // Import PortfolioCard component
 import "./FlipCard.css"; // Import CSS for flip card styling
+import lbk from "../assets/little-book-keeper.png"; // Import image for the first card
+import emp from "../assets/emp-screenshot.png"; // Import image for the second card
 
 const Portfolio: React.FC = () => {
   return (
@@ -20,11 +22,11 @@ const Portfolio: React.FC = () => {
       <section id="portfolio" className="px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Example of a Portfolio Card */}
         <PortfolioCard
-          screenshot="src/assets/little-book-keeper.png"
+          screenshot={lbk}
           githubLink="https://github.com/Josie3fl/little-book-keeper-JB"
         />
         <PortfolioCard
-          screenshot="src/assets/emp-screenshot.png"
+          screenshot={emp}
           githubLink="https://github.com/Josie3fl/EMP-Racetrack"
         />
         {/* Add more PortfolioCards as needed */}
